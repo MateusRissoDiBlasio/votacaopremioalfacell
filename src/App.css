@@ -1,0 +1,285 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background-color: black;
+  font-size: 24px; 
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto'), url(/fonts/Roboto-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: local('Oswald'), url(/fonts/Oswald-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'OswaldBold';
+  src: local('OswaldBold'), url(/fonts/Oswald-Bold.ttf) format('truetype');
+}
+
+h1 {
+  margin-top: -960px;
+  margin-bottom: 30px;
+  justify-self: center;
+  color: black;
+  -webkit-text-stroke: white;
+  -webkit-text-stroke-width: 2px;
+}
+
+#backgroundVideo{
+  position: relative;
+  
+  z-index: -1;
+  width: 100vw;
+  height: 1000px;
+
+}
+
+.candidatos {
+  position: relative;
+  z-index: 1;
+  height: 500px;
+  width: 400px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.language {
+  position: relative;
+  z-index: 1;
+  /* font-family: 'Roboto';
+  font-family: 'Oswald'; */
+  font-family: 'OswaldBold';
+  color: goldenrod;
+  -webkit-text-stroke: black;
+  -webkit-text-stroke-width: 1px;
+  font-size: 24px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  /* background-color: blanchedalmond; */
+  /* border: 1px solid #222; */
+  margin: 2px;
+}
+
+.voteCount {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.language button {
+  color: goldenrod;
+  background-color: #000000;
+  width: 160px;
+  /* border: none; */
+  filter: drop-shadow(1px 1px goldenrod );
+  font-size: 24px;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 5px;
+  outline: none;
+  cursor: pointer
+}
+
+.language button:hover{
+  
+    filter: drop-shadow( 0px 0px 10px goldenrod );
+  }
+
+
+.candidato{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* color: aliceblue; */
+  align-items: center;
+
+  h4{
+    width: 134px;
+  }
+
+  img{    
+    width: 100px;
+    border: 5px solid goldenrod;
+    border-radius: 25%;
+    background-color: #222;
+  }
+}
+
+.candidato:hover{
+  cursor: pointer;
+
+  h4{
+    scale:1.2;
+  }
+  img{
+    filter: drop-shadow( 0px 0px 10px goldenrod );
+  }
+
+  
+}
+
+.resultados{
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.emptyMarker{
+  height: 180px;
+}
+
+
+.parcial{
+  color: aliceblue;
+}
+
+#parcial{
+  width:140px;
+  height: 30px;
+  align-self: center;
+  margin-bottom: 40px;
+}
+
+#vencedor{
+  width: 120px;
+  height: 40px;
+}
+
+#trofeu-vencedor{
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 1020px;
+  margin-top: -725px;
+  position: absolute;
+  background-color: #000000;
+}
+
+#trophybackground{
+  position: relative;
+  justify-self: center;
+  align-self: center;
+  z-index: 3;
+  width: 100vw;
+  height: 1000px;
+}
+
+#showvencedor{
+  display: flex;
+}
+
+#trofeu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.candidato1vencedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img{
+    opacity: 0;
+    position: relative;
+    z-index: 3;
+    width: 200px;
+    height: 300px;
+    margin-top: -325px;
+    margin-left: -355px; 
+    animation: fade 3s 6s forwards;
+  }
+}
+
+.candidato2vencedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img{
+    opacity: 0;
+    position: relative;
+    z-index: 3;
+    width: 200px;
+    height: 300px;
+    margin-top: -323px;
+    margin-left: 356px; 
+    animation: fade 3s 6s forwards;
+  }
+}
+
+.candidato3vencedor{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  img{
+    opacity: 0;
+    position: relative;
+    z-index: 3;
+    width: 260px;
+    height: 260px;
+    margin-top: -285px;
+    margin-left: -295px;   
+    animation: fade 3s 6s forwards;  
+  }
+}
+
+@keyframes fade{
+
+0%{
+opacity: 0;
+
+}
+
+100%{
+  opacity: 1;
+}
+
+}
+
+#pilha{
+  width: 80px;
+  margin-top: -50px;
+  animation: pulse 2s ease-in-out infinite ;
+}
+
+@keyframes pulse{
+
+  0%{
+    scale: 1;
+  
+  }
+  
+  50%{
+    scale: 1.2;
+  }
+
+  100%{
+    scale: 1;
+  }
+  
+  }

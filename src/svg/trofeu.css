@@ -1,0 +1,141 @@
+#winnerAnanias{
+    position: relative;
+    z-index: 3;    
+    width: 450px;
+    margin-top: -820px;
+
+    #joao{
+        display: none;
+    }
+
+    #thiago{
+        display: none;
+    }
+
+    #ananias{
+        opacity: 0;
+        animation: fade 3s 5s forwards;
+    }
+}
+
+#winnerJoao{
+    position: relative;
+    z-index: 3;    
+    width: 450px;
+    margin-top: -820px;
+
+    #winner-joao-ananias{
+        display: none;
+    }
+
+    #winner-joao-thiago{
+        display: none;
+    }
+
+    #winner-joao-joao{
+        opacity: 0;
+        animation: fade 3s 5s forwards;
+    }
+}
+
+#winnerThiago{
+    position: relative;
+    z-index: 3;    
+    width: 450px;
+    margin-top: -820px;
+
+    #winner-thiago-ananias{
+        display: none;
+    }
+
+    #winner-thiago-joao{
+        display: none;
+    }
+    
+    #winner-thiago-thiago{
+        opacity: 0;
+        animation: fade 3s 5s forwards;
+    }
+}
+
+
+@media (min-width: 360px) and (max-width: 375px){
+    #winnerJoao{
+        position: relative;
+        z-index: 3;    
+        width: 350px;
+        margin-top: -740px;
+        margin-left: 35px;
+    }
+
+    #winnerAnanias{
+        position: relative;
+        z-index: 3;    
+        width: 350px;
+        margin-top: -740px;
+        margin-left: 35px;
+    }
+
+    #winnerThiago{
+        position: relative;
+        z-index: 3;    
+        width: 350px;
+        margin-top: -740px;
+        margin-left: 35px;
+    }
+
+}
+
+@media (min-width: 376px) and (max-width: 425px){
+    #winnerJoao{
+        position: relative;
+        z-index: 3;    
+        width: 350px;
+        margin-top: -730px;
+        margin-left: 15px;
+    }
+
+    #winnerAnanias{
+        position: relative;
+        z-index: 3;    
+        width: 350px;
+        margin-top: -740px;
+        margin-left: 15px;
+    }
+
+    #winnerThiago{
+        position: relative;
+        z-index: 3;    
+        width: 350px;
+        margin-top: -740px;
+        margin-left: 15px;
+    }
+
+}
+
+@media (min-width: 426px) and (max-width: 500px){
+    #winnerJoao{
+        position: relative;
+        z-index: 3;    
+        width: 350px;
+        margin-top: -900px;
+        margin-left: 35px;
+    }
+
+    #winnerAnanias{
+        position: relative;
+        z-index: 3;    
+        width: 350px;
+        margin-top: -850px;
+        margin-left: 35px;
+    }
+
+    #winnerThiago{
+        position: relative;
+        z-index: 3;    
+        width: 350px;
+        margin-top: -950px;
+        margin-left: 35px;
+    }
+
+}
