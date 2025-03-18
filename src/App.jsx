@@ -178,7 +178,7 @@ class App extends Component{
 		return(
 			<>
 				<div id='base'>
-					<video autoPlay loop id='backgroundVideo'>
+					<video autoPlay muted loop id='backgroundVideo'>
 						<source src='imgs/backgroundvideo.mp4' type='video/mp4' />
 					</video>
 					
@@ -228,7 +228,7 @@ class App extends Component{
 
 									<div className='showvencedor'>
 										<div className='winnerbackground'>
-											<video autoPlay loop id='trophybackground'>
+											<video autoPlay muted loop id='trophybackground'>
 												<source src='imgs/trophybackground.mp4' type='video/mp4' />
 											</video>
 										</div>	
