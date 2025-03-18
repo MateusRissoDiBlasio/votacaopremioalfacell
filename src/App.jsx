@@ -90,7 +90,7 @@ class App extends Component{
 	}
 	
 	handleClickAudio = () => {
-		const audio = new Audio("../imgs/urna.mp3")
+		const audio = new Audio("imgs/urna.mp3")
 		audio.play();
 		setTimeout(() => { alert('Voto computado com sucesso'); 
 
@@ -179,11 +179,11 @@ class App extends Component{
 			<>
 				<div id='base'>
 					<video autoPlay loop id='backgroundVideo'>
-						<source src='../imgs/backgroundvideo.mp4' type='video/mp4' />
+						<source src='imgs/backgroundvideo.mp4' type='video/mp4' />
 					</video>
 					
 					<h1>Prêmio ALFACELL!</h1>
-					<img id='pilha' src='/imgs/pilha.png' alt='pilha'></img>
+					<img id='pilha' src='imgs/pilha.png' alt='pilha'></img>
 					<div className="candidatos">
 						{
 						this.state.languages.map((lang, i) => 
@@ -195,7 +195,7 @@ class App extends Component{
 							</div> */}
 							
 								<div onClick={this.vote.bind(this, i)} className="candidato">
-											<img key={i} src={`../imgs/${lang.name}.png`} alt={`${lang.name}`}></img>
+											<img key={i} src={`imgs/${lang.name}.png`} alt={`${lang.name}`}></img>
 											<h4>{lang.name}</h4>
 
 								</div>
@@ -229,15 +229,16 @@ class App extends Component{
 									<div className='showvencedor'>
 										<div className='winnerbackground'>
 											<video autoPlay loop id='trophybackground'>
-												<source src='../imgs/trophybackground.mp4' type='video/mp4' />
+												<source src='imgs/trophybackground.mp4' type='video/mp4' />
 											</video>
 										</div>	
 										<div className='trofeu'>
-											{ (this.state.votoscandidato1 > this.state.votoscandidato2) && (this.state.votoscandidato1 > this.state.votoscandidato3) ? <div className='candidato1vencedor'><Ananias /> <img src='../imgs/ananias-winner.png' alt='Ananias Vencedor'></img> </div> : ''}
+											{ (this.state.votoscandidato1 > this.state.votoscandidato2) && (this.state.votoscandidato1 > this.state.votoscandidato3) ? 
+											<div className='candidato1vencedor'><Ananias /> <img src='imgs/ananias-winner.png' alt='Ananias Vencedor'></img> </div> : ''}
 											{ (this.state.votoscandidato2 > this.state.votoscandidato1) && (this.state.votoscandidato2 > this.state.votoscandidato3) ?
-											<div className='candidato2vencedor'><Joao /> <img src='../imgs/João Marcos.png' alt='Ananias Vencedor'></img> </div> : ''}
+											<div className='candidato2vencedor'><Joao /> <img src='imgs/João Marcos.png' alt='Ananias Vencedor'></img> </div> : ''}
 											{ (this.state.votoscandidato3 > this.state.votoscandidato1) && (this.state.votoscandidato3 > this.state.votoscandidato2) ? 
-											<div className='candidato3vencedor'><Thiago /> <img src='../imgs/barba-winner.png' alt='Ananias Vencedor'></img> </div> : ''}
+											<div className='candidato3vencedor'><Thiago /> <img src='imgs/barba-winner.png' alt='Ananias Vencedor'></img> </div> : ''}
 										</div>	
 									</div>
 

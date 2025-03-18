@@ -14,17 +14,17 @@ body {
 
 @font-face {
   font-family: 'Roboto';
-  src: local('Roboto'), url(/fonts/Roboto-Bold.ttf) format('truetype');
+  src: local('Roboto'), url(fonts/Roboto-Bold.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Oswald';
-  src: local('Oswald'), url(/fonts/Oswald-Regular.ttf) format('truetype');
+  src: local('Oswald'), url(fonts/Oswald-Regular.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'OswaldBold';
-  src: local('OswaldBold'), url(/fonts/Oswald-Bold.ttf) format('truetype');
+  src: local('OswaldBold'), url(fonts/Oswald-Bold.ttf) format('truetype');
 }
 
 h1 {
